@@ -16,3 +16,19 @@
        specific language governing permissions and limitations
        under the License.
 */
+	cordova.exec(function(winParam) {},
+                 function(error) {},
+                 "service",
+                 "action",
+                 ["firstArgument", "secondArgument", 42, false]
+	);
+				 
+	window.echo = function(str, callback) {
+        cordova.exec(callback, function(err) {
+            callback('Nothing to echo.');
+        }, "Echo", "echo", [str]);
+    };
+	
+	window.echo("echome", function(echoValue) {
+        alert(echoValue == "echome"); // should alert true.
+    });
