@@ -8,15 +8,15 @@
     <keywords>cordova,practise</keywords>
     <repo>https://github.com/johnyso/cordova-plugin-practise</repo>
 
-    <js-module src="www/practise.js" name="Practise">
-        <clobbers target="window.practise" />
+    <js-module src="www/practise.js" name="practise">
+        <clobbers target="practise" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Practise" >
-                <param name="android-package" value="com.example.cordova.Practise"/>
+                <param name="android-package" value="com.example.cordova.practise.Practise"/>
             </feature>
         </config-file>
 

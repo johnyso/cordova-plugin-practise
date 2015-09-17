@@ -18,14 +18,28 @@
  * under the License.
  *
 */
-var practise = {
-	create: function(title, successCallback, errorCallback) {
-		cordova.exec(function(winParam) {},
-					 function(error) {},
-					 "Practise",
-					 "create",
-					 [title]
-		);
-	}
+var exec = require('cordova/exec'),
+    cordova = require('cordova');
+
+/**
+ * This represents the mobile device, and provides properties for inspecting the model, version, UUID of the
+ * phone, etc.
+ * @constructor
+ */
+function Practise() {
+    this.title = "the Title";
 }
-module.exports = practise;
+
+/**
+ * Get device info
+ *
+ * @param {Function} successCallback The function to call when the heading data is available
+ * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
+ */
+Device.prototype.getInfo = function(title, successCallback, errorCallback) {
+	this.title = title;
+	alert("execute");
+    exec(successCallback, errorCallback, "Device", "getDeviceInfo", [this.title]);
+};
+
+module.exports = new Practise();
