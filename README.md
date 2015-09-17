@@ -1,0 +1,1 @@
+Getting startet with cordova plugin development
