@@ -25,8 +25,22 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 public class Practise extends CordovaPlugin {
+    /**
+     * Constructor.
+     */
+    public Practise() {
+    }
+	
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+		if (action.equals("create")) {
+            JSONObject r = new JSONObject();
+            r.put("title", "The awesome Java title");
+            callbackContext.success(r);
+        }
+        else {
+            return false;
+        }
 		return true;
 	}
 }
