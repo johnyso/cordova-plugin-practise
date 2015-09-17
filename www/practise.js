@@ -28,3 +28,4 @@ var practise = {
 		);
 	}
 }
+module.exports = practise;
