@@ -36,10 +36,10 @@ function Practise() {
  * @param {Function} successCallback The function to call when the heading data is available
  * @param {Function} errorCallback The function to call when there is an error getting the heading data. (OPTIONAL)
  */
-Device.prototype.getInfo = function(title, successCallback, errorCallback) {
+Practise.prototype.getInfo = function(title, successCallback, errorCallback) {
 	this.title = title;
 	alert("execute");
-    exec(successCallback, errorCallback, "Device", "getDeviceInfo", [this.title]);
+    exec(successCallback, errorCallback, "Practise", "create", [this.title]);
 };
 
 module.exports = new Practise();
