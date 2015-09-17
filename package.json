@@ -1,0 +1,20 @@
+{
+  "name": "cordova-plugin-practise",
+  "version": "0.0.1",
+  "description": "Cordova Practise Plugin",
+  "cordova": {
+    "id": "cordova-plugin-practise",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnyso/cordova-plugin-practise"
+  },
+  "keywords": [
+    "cordova-android"
+  ],
+  "author": "Apache Software Foundation",
+  "license": "Apache 2.0"
+}
