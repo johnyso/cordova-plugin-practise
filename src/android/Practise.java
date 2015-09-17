@@ -27,6 +27,6 @@ import org.json.JSONException;
 public class Practise extends CordovaPlugin {
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-		
+		return true;
 	}
 }
