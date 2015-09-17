@@ -18,3 +18,13 @@
  * under the License.
  *
 */
+var practise = {
+	create: function(title, successCallback, errorCallback) {
+		cordova.exec(function(winParam) {},
+					 function(error) {},
+					 "Practise",
+					 "create",
+					 [title]
+		);
+	}
+}
